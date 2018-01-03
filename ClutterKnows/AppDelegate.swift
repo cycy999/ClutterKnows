@@ -13,9 +13,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var leftSide = SideController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15)], for: .normal)
+        UINavigationBar.appearance().barTintColor = UIColor.red.withAlphaComponent(0.5)
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedStringKey.foregroundColor: UIColor.white
+        ]
+        UINavigationBar.appearance().tintColor = UIColor.white
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.rootViewController = leftSide
+        window?.makeKeyAndVisible()
+        
+        FilesPath().path()
+        MachineModels().printDevice()
+        FontFamily().printFonts()
+        
         return true
     }
 
