@@ -18,7 +18,7 @@ class MainController: UITabBarController {
         NotificationCenter.default.addObserver(self, selector: #selector(pushToController(_:)), name: NSNotification.Name(rawValue: "postcontroller"), object: nil)
         
         var vcs = [UINavigationController]()
-        for color in [UIColor.cyan, UIColor.yellow,UIColor.red] {
+        for color in [UIColor.white, UIColor.yellow,UIColor.red] {
             let viewController = SubController()
             viewController.view.backgroundColor = color
             viewController.title = "子页面"

@@ -14,7 +14,6 @@
 		B6165BC31FFCA2220083D4CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6165BC11FFCA2220083D4CB /* LaunchScreen.storyboard */; };
 		B6165BCE1FFCA2220083D4CB /* ClutterKnowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BCD1FFCA2220083D4CB /* ClutterKnowsTests.swift */; };
 		B6165BD91FFCA2220083D4CB /* ClutterKnowsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BD81FFCA2220083D4CB /* ClutterKnowsUITests.swift */; };
-		B6165BEE1FFCA2DE0083D4CB /* ClearFilesTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BE61FFCA2DD0083D4CB /* ClearFilesTool.swift */; };
 		B6165BEF1FFCA2DE0083D4CB /* UIColorExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BE71FFCA2DD0083D4CB /* UIColorExpand.swift */; };
 		B6165BF01FFCA2DE0083D4CB /* SmallPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BE81FFCA2DD0083D4CB /* SmallPoint.swift */; };
 		B6165BF11FFCA2DE0083D4CB /* ClazzA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BE91FFCA2DD0083D4CB /* ClazzA.swift */; };
@@ -26,6 +25,7 @@
 		B6165BFB1FFCA2EC0083D4CB /* SideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BF71FFCA2EB0083D4CB /* SideController.swift */; };
 		B6165BFC1FFCA2EC0083D4CB /* SubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BF81FFCA2EC0083D4CB /* SubController.swift */; };
 		B6165BFD1FFCA2EC0083D4CB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BF91FFCA2EC0083D4CB /* MainController.swift */; };
+		B6165C031FFCAA9D0083D4CB /* DateExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165C021FFCAA9D0083D4CB /* DateExpand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 		B6165BD41FFCA2220083D4CB /* ClutterKnowsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClutterKnowsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6165BD81FFCA2220083D4CB /* ClutterKnowsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClutterKnowsUITests.swift; sourceTree = "<group>"; };
 		B6165BDA1FFCA2220083D4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6165BE61FFCA2DD0083D4CB /* ClearFilesTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearFilesTool.swift; sourceTree = "<group>"; };
 		B6165BE71FFCA2DD0083D4CB /* UIColorExpand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExpand.swift; sourceTree = "<group>"; };
 		B6165BE81FFCA2DD0083D4CB /* SmallPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallPoint.swift; sourceTree = "<group>"; };
 		B6165BE91FFCA2DD0083D4CB /* ClazzA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClazzA.swift; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		B6165BF71FFCA2EB0083D4CB /* SideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideController.swift; sourceTree = "<group>"; };
 		B6165BF81FFCA2EC0083D4CB /* SubController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubController.swift; sourceTree = "<group>"; };
 		B6165BF91FFCA2EC0083D4CB /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		B6165C021FFCAA9D0083D4CB /* DateExpand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExpand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +123,9 @@
 			children = (
 				B6165BB81FFCA2220083D4CB /* AppDelegate.swift */,
 				B6165BBA1FFCA2220083D4CB /* ViewController.swift */,
+				B6165BF71FFCA2EB0083D4CB /* SideController.swift */,
 				B6165BF61FFCA2EB0083D4CB /* LeftController.swift */,
 				B6165BF91FFCA2EC0083D4CB /* MainController.swift */,
-				B6165BF71FFCA2EB0083D4CB /* SideController.swift */,
 				B6165BF81FFCA2EC0083D4CB /* SubController.swift */,
 				B6165BFF1FFCA3BB0083D4CB /* ClutterKnowledge */,
 				B6165BC41FFCA2220083D4CB /* Info.plist */,
@@ -166,13 +166,13 @@
 			isa = PBXGroup;
 			children = (
 				B6165BE91FFCA2DD0083D4CB /* ClazzA.swift */,
-				B6165BE61FFCA2DD0083D4CB /* ClearFilesTool.swift */,
 				B6165BED1FFCA2DE0083D4CB /* FilesPath.swift */,
 				B6165BEC1FFCA2DE0083D4CB /* FontFamily.swift */,
 				B6165BEB1FFCA2DE0083D4CB /* GCDExpond.swift */,
 				B6165BEA1FFCA2DE0083D4CB /* MachineModels.swift */,
 				B6165BE81FFCA2DD0083D4CB /* SmallPoint.swift */,
 				B6165BE71FFCA2DD0083D4CB /* UIColorExpand.swift */,
+				B6165C021FFCAA9D0083D4CB /* DateExpand.swift */,
 			);
 			path = ClutterKnowledge;
 			sourceTree = "<group>";
@@ -314,10 +314,10 @@
 				B6165BF11FFCA2DE0083D4CB /* ClazzA.swift in Sources */,
 				B6165BF01FFCA2DE0083D4CB /* SmallPoint.swift in Sources */,
 				B6165BBB1FFCA2220083D4CB /* ViewController.swift in Sources */,
+				B6165C031FFCAA9D0083D4CB /* DateExpand.swift in Sources */,
 				B6165BB91FFCA2220083D4CB /* AppDelegate.swift in Sources */,
 				B6165BFA1FFCA2EC0083D4CB /* LeftController.swift in Sources */,
 				B6165BF51FFCA2DE0083D4CB /* FilesPath.swift in Sources */,
-				B6165BEE1FFCA2DE0083D4CB /* ClearFilesTool.swift in Sources */,
 				B6165BFC1FFCA2EC0083D4CB /* SubController.swift in Sources */,
 				B6165BFD1FFCA2EC0083D4CB /* MainController.swift in Sources */,
 				B6165BEF1FFCA2DE0083D4CB /* UIColorExpand.swift in Sources */,

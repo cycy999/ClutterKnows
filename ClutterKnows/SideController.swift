@@ -24,7 +24,7 @@ class SideController: UIViewController {
 
         leftController = LeftController()
         let nav = UINavigationController(rootViewController: ViewController())
-        nav.navigationBar.barTintColor = UIColor.yellow
+        nav.navigationBar.barTintColor = UIColor.cyan
         mainController = MainController()
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
         pan = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))

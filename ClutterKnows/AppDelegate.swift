@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15)], for: .normal)
-        UINavigationBar.appearance().barTintColor = UIColor.red.withAlphaComponent(0.5)
+        UINavigationBar.appearance().barTintColor = UIColor.blue.withAlphaComponent(0.5)
         UINavigationBar.appearance().titleTextAttributes = [
             NSAttributedStringKey.foregroundColor: UIColor.white
         ]
@@ -30,8 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FilesPath().path()
         MachineModels().printDevice()
-        FontFamily().printFonts()
-        
+        DateExpand().test()
         return true
     }
 
