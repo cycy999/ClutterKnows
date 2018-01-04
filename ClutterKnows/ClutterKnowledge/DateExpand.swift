@@ -20,6 +20,8 @@ class DateExpand: NSObject {
         calculate()
         valueCalculate()
         getTimes()
+        getNumOfDaysInMonth()
+        getAllDaysWithCalendar()
     }
     
     func dateFromString(str: String) -> Date? {
@@ -119,6 +121,40 @@ class DateExpand: NSObject {
         var comps = DateComponents()
         comps = calender.dateComponents([.year, .month, .day, .weekday, .hour, .minute], from: Date())
         print(comps.year, comps.month, comps.day, comps.hour, comps.minute, comps.weekday! - 1)
+    }
+    
+    //MARK: - 当月有多少天
+    func getNumOfDaysInMonth() -> Int{
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        let date = Date()
+        let range = calendar.range(of: Calendar.Component.day, in: Calendar.Component.month, for: date)
+        print(range as Any)
+        if let leng = range {
+            print(leng.count)
+            return leng.count
+        }
+        return 0
+        //Optional(Range(1..<32))
+        //31
+    }
+    
+    func getAllDaysWithCalendar() {
+        let dayCount = getNumOfDaysInMonth()
+        let formatter = DateFormatter()
+        let date = Date()
+        formatter.locale = Locale.current
+        formatter.dateFormat = "yyyy-MM"
+        let str = formatter.string(from: date)
+        formatter.dateFormat = "yyyy-MM-dd HH"
+        var allDaysArray = [Date]()
+        for i in 1 ..< dayCount + 1 {
+            let sr = str + "-\(i)" + " 09"
+            if let date = formatter.date(from: sr) {
+                allDaysArray.append(date)
+                
+                print(date)
+            }
+        }
     }
     
     //MARK: - 日期比较

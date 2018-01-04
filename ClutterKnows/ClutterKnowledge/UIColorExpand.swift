@@ -24,6 +24,15 @@ class UIColorExpand: UIColor {
         return UIColor(red: r, green: g, blue: b, alpha: CGFloat(alpha))
     }
     
+    //随机颜色
+    func randomColor() -> UIColor {
+        return UIColor(red: randomValue(), green: randomValue(), blue: randomValue(), alpha: 1)
+    }
+    
+    func randomValue() -> CGFloat {
+        return CGFloat(arc4random_uniform(256)) / 255
+    }
+    
     //字体默认的颜色
     class func fontDefaultColor()-> UIColor {
         return self.getColor("333333")

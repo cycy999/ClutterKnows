@@ -26,6 +26,11 @@
 		B6165BFC1FFCA2EC0083D4CB /* SubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BF81FFCA2EC0083D4CB /* SubController.swift */; };
 		B6165BFD1FFCA2EC0083D4CB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BF91FFCA2EC0083D4CB /* MainController.swift */; };
 		B6165C031FFCAA9D0083D4CB /* DateExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165C021FFCAA9D0083D4CB /* DateExpand.swift */; };
+		B6481E3A1FFCE0CB0075A1A7 /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E391FFCE0CB0075A1A7 /* CollectionController.swift */; };
+		B6481E3C1FFDCD650075A1A7 /* CollectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3B1FFDCD650075A1A7 /* CollectionFooter.swift */; };
+		B6481E3E1FFDCD710075A1A7 /* CollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3D1FFDCD710075A1A7 /* CollectionHeader.swift */; };
+		B6481E401FFDD1F10075A1A7 /* MyCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3F1FFDD1F10075A1A7 /* MyCollectionController.swift */; };
+		B68267E01FFDFE2A009D070F /* WaterFlowViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267DF1FFDFE2A009D070F /* WaterFlowViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		B6165BF81FFCA2EC0083D4CB /* SubController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubController.swift; sourceTree = "<group>"; };
 		B6165BF91FFCA2EC0083D4CB /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		B6165C021FFCAA9D0083D4CB /* DateExpand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExpand.swift; sourceTree = "<group>"; };
+		B6481E391FFCE0CB0075A1A7 /* CollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionController.swift; sourceTree = "<group>"; };
+		B6481E3B1FFDCD650075A1A7 /* CollectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooter.swift; sourceTree = "<group>"; };
+		B6481E3D1FFDCD710075A1A7 /* CollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeader.swift; sourceTree = "<group>"; };
+		B6481E3F1FFDD1F10075A1A7 /* MyCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionController.swift; sourceTree = "<group>"; };
+		B68267DF1FFDFE2A009D070F /* WaterFlowViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,7 @@
 				B6165BF61FFCA2EB0083D4CB /* LeftController.swift */,
 				B6165BF91FFCA2EC0083D4CB /* MainController.swift */,
 				B6165BF81FFCA2EC0083D4CB /* SubController.swift */,
+				B6481E381FFCE0420075A1A7 /* Collection */,
 				B6165BFF1FFCA3BB0083D4CB /* ClutterKnowledge */,
 				B6165BC41FFCA2220083D4CB /* Info.plist */,
 				B6165BFE1FFCA2F30083D4CB /* Configuration */,
@@ -175,6 +186,18 @@
 				B6165C021FFCAA9D0083D4CB /* DateExpand.swift */,
 			);
 			path = ClutterKnowledge;
+			sourceTree = "<group>";
+		};
+		B6481E381FFCE0420075A1A7 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				B6481E391FFCE0CB0075A1A7 /* CollectionController.swift */,
+				B6481E3D1FFDCD710075A1A7 /* CollectionHeader.swift */,
+				B6481E3B1FFDCD650075A1A7 /* CollectionFooter.swift */,
+				B6481E3F1FFDD1F10075A1A7 /* MyCollectionController.swift */,
+				B68267DF1FFDFE2A009D070F /* WaterFlowViewLayout.swift */,
+			);
+			path = Collection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,15 +339,20 @@
 				B6165BBB1FFCA2220083D4CB /* ViewController.swift in Sources */,
 				B6165C031FFCAA9D0083D4CB /* DateExpand.swift in Sources */,
 				B6165BB91FFCA2220083D4CB /* AppDelegate.swift in Sources */,
+				B6481E401FFDD1F10075A1A7 /* MyCollectionController.swift in Sources */,
 				B6165BFA1FFCA2EC0083D4CB /* LeftController.swift in Sources */,
 				B6165BF51FFCA2DE0083D4CB /* FilesPath.swift in Sources */,
+				B6481E3E1FFDCD710075A1A7 /* CollectionHeader.swift in Sources */,
 				B6165BFC1FFCA2EC0083D4CB /* SubController.swift in Sources */,
 				B6165BFD1FFCA2EC0083D4CB /* MainController.swift in Sources */,
 				B6165BEF1FFCA2DE0083D4CB /* UIColorExpand.swift in Sources */,
 				B6165BFB1FFCA2EC0083D4CB /* SideController.swift in Sources */,
 				B6165BF41FFCA2DE0083D4CB /* FontFamily.swift in Sources */,
+				B6481E3C1FFDCD650075A1A7 /* CollectionFooter.swift in Sources */,
 				B6165BF31FFCA2DE0083D4CB /* GCDExpond.swift in Sources */,
+				B6481E3A1FFCE0CB0075A1A7 /* CollectionController.swift in Sources */,
 				B6165BF21FFCA2DE0083D4CB /* MachineModels.swift in Sources */,
+				B68267E01FFDFE2A009D070F /* WaterFlowViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
