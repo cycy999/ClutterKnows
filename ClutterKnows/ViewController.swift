@@ -14,6 +14,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let kScreenWidth = UIScreen.main.bounds.width
     let kScreenHeight = UIScreen.main.bounds.height
     
+    let showTexts = ["基本collection","竖向瀑布流","横向瀑布流","待续","待续","待续","待续"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.yellow
@@ -51,7 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return showTexts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -59,7 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
-        cell?.textLabel?.text = "测试\(indexPath.row)"
+        cell?.textLabel?.text = showTexts[indexPath.item]
         return cell!
     }
 
@@ -69,6 +71,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             show(CollectionController(), sender: nil)
         } else if indexPath.row == 1 {
             show(MyCollectionController(), sender: nil)
+        } else if indexPath.row == 2 {
+            show(HorCollectionController(), sender: nil)
         }
     }
 

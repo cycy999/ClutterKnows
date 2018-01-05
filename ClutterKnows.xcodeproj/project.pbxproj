@@ -31,6 +31,10 @@
 		B6481E3E1FFDCD710075A1A7 /* CollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3D1FFDCD710075A1A7 /* CollectionHeader.swift */; };
 		B6481E401FFDD1F10075A1A7 /* MyCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3F1FFDD1F10075A1A7 /* MyCollectionController.swift */; };
 		B68267E01FFDFE2A009D070F /* WaterFlowViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267DF1FFDFE2A009D070F /* WaterFlowViewLayout.swift */; };
+		B68267E21FFE1EBE009D070F /* MyVerCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E11FFE1EBE009D070F /* MyVerCollection.swift */; };
+		B68267E41FFE1EDA009D070F /* WaterFlowViewsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E31FFE1EDA009D070F /* WaterFlowViewsLayout.swift */; };
+		B68267E61FFE2724009D070F /* WaterFlowViewHorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E51FFE2724009D070F /* WaterFlowViewHorLayout.swift */; };
+		B68267E81FFE273D009D070F /* HorCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E71FFE273D009D070F /* HorCollectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		B6481E3D1FFDCD710075A1A7 /* CollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeader.swift; sourceTree = "<group>"; };
 		B6481E3F1FFDD1F10075A1A7 /* MyCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionController.swift; sourceTree = "<group>"; };
 		B68267DF1FFDFE2A009D070F /* WaterFlowViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowViewLayout.swift; sourceTree = "<group>"; };
+		B68267E11FFE1EBE009D070F /* MyVerCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVerCollection.swift; sourceTree = "<group>"; };
+		B68267E31FFE1EDA009D070F /* WaterFlowViewsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowViewsLayout.swift; sourceTree = "<group>"; };
+		B68267E51FFE2724009D070F /* WaterFlowViewHorLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowViewHorLayout.swift; sourceTree = "<group>"; };
+		B68267E71FFE273D009D070F /* HorCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorCollectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +204,10 @@
 				B6481E3B1FFDCD650075A1A7 /* CollectionFooter.swift */,
 				B6481E3F1FFDD1F10075A1A7 /* MyCollectionController.swift */,
 				B68267DF1FFDFE2A009D070F /* WaterFlowViewLayout.swift */,
+				B68267E11FFE1EBE009D070F /* MyVerCollection.swift */,
+				B68267E31FFE1EDA009D070F /* WaterFlowViewsLayout.swift */,
+				B68267E71FFE273D009D070F /* HorCollectionController.swift */,
+				B68267E51FFE2724009D070F /* WaterFlowViewHorLayout.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -334,17 +346,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68267E81FFE273D009D070F /* HorCollectionController.swift in Sources */,
 				B6165BF11FFCA2DE0083D4CB /* ClazzA.swift in Sources */,
 				B6165BF01FFCA2DE0083D4CB /* SmallPoint.swift in Sources */,
+				B68267E61FFE2724009D070F /* WaterFlowViewHorLayout.swift in Sources */,
 				B6165BBB1FFCA2220083D4CB /* ViewController.swift in Sources */,
 				B6165C031FFCAA9D0083D4CB /* DateExpand.swift in Sources */,
 				B6165BB91FFCA2220083D4CB /* AppDelegate.swift in Sources */,
 				B6481E401FFDD1F10075A1A7 /* MyCollectionController.swift in Sources */,
 				B6165BFA1FFCA2EC0083D4CB /* LeftController.swift in Sources */,
+				B68267E41FFE1EDA009D070F /* WaterFlowViewsLayout.swift in Sources */,
 				B6165BF51FFCA2DE0083D4CB /* FilesPath.swift in Sources */,
 				B6481E3E1FFDCD710075A1A7 /* CollectionHeader.swift in Sources */,
 				B6165BFC1FFCA2EC0083D4CB /* SubController.swift in Sources */,
 				B6165BFD1FFCA2EC0083D4CB /* MainController.swift in Sources */,
+				B68267E21FFE1EBE009D070F /* MyVerCollection.swift in Sources */,
 				B6165BEF1FFCA2DE0083D4CB /* UIColorExpand.swift in Sources */,
 				B6165BFB1FFCA2EC0083D4CB /* SideController.swift in Sources */,
 				B6165BF41FFCA2DE0083D4CB /* FontFamily.swift in Sources */,
