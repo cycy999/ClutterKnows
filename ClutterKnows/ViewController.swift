@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let kScreenWidth = UIScreen.main.bounds.width
     let kScreenHeight = UIScreen.main.bounds.height
     
-    let showTexts = ["基本collection","竖向瀑布流","横向瀑布流","待续","待续","待续","待续"]
+    let showTexts = ["基本collection","竖向瀑布流","横向瀑布流","测试","待续","待续","待续"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +73,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             show(MyCollectionController(), sender: nil)
         } else if indexPath.row == 2 {
             show(HorCollectionController(), sender: nil)
+        } else if indexPath.row == 3 {
+            show(MyCalendarController(), sender: nil)
         }
     }
 

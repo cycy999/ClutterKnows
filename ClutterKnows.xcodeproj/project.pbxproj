@@ -35,6 +35,11 @@
 		B68267E41FFE1EDA009D070F /* WaterFlowViewsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E31FFE1EDA009D070F /* WaterFlowViewsLayout.swift */; };
 		B68267E61FFE2724009D070F /* WaterFlowViewHorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E51FFE2724009D070F /* WaterFlowViewHorLayout.swift */; };
 		B68267E81FFE273D009D070F /* HorCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E71FFE273D009D070F /* HorCollectionController.swift */; };
+		B68267EA1FFF4CBE009D070F /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E91FFF4CBD009D070F /* QrCode.swift */; };
+		B68267ED2002405E009D070F /* MyCalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267EC2002405E009D070F /* MyCalendarController.swift */; };
+		B68267EF2002532B009D070F /* MyCalendarCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267EE2002532B009D070F /* MyCalendarCollectionCell.swift */; };
+		B68267F12003449B009D070F /* MyCalendarControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267F02003449B009D070F /* MyCalendarControl.swift */; };
+		B68267F320034CD1009D070F /* MyCalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267F220034CD1009D070F /* MyCalendarHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +94,11 @@
 		B68267E31FFE1EDA009D070F /* WaterFlowViewsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowViewsLayout.swift; sourceTree = "<group>"; };
 		B68267E51FFE2724009D070F /* WaterFlowViewHorLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowViewHorLayout.swift; sourceTree = "<group>"; };
 		B68267E71FFE273D009D070F /* HorCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorCollectionController.swift; sourceTree = "<group>"; };
+		B68267E91FFF4CBD009D070F /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
+		B68267EC2002405E009D070F /* MyCalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarController.swift; sourceTree = "<group>"; };
+		B68267EE2002532B009D070F /* MyCalendarCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarCollectionCell.swift; sourceTree = "<group>"; };
+		B68267F02003449B009D070F /* MyCalendarControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarControl.swift; sourceTree = "<group>"; };
+		B68267F220034CD1009D070F /* MyCalendarHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +156,7 @@
 				B6165BF91FFCA2EC0083D4CB /* MainController.swift */,
 				B6165BF81FFCA2EC0083D4CB /* SubController.swift */,
 				B6481E381FFCE0420075A1A7 /* Collection */,
+				B68267EB2002403A009D070F /* MyCalendar */,
 				B6165BFF1FFCA3BB0083D4CB /* ClutterKnowledge */,
 				B6165BC41FFCA2220083D4CB /* Info.plist */,
 				B6165BFE1FFCA2F30083D4CB /* Configuration */,
@@ -192,6 +203,7 @@
 				B6165BE81FFCA2DD0083D4CB /* SmallPoint.swift */,
 				B6165BE71FFCA2DD0083D4CB /* UIColorExpand.swift */,
 				B6165C021FFCAA9D0083D4CB /* DateExpand.swift */,
+				B68267E91FFF4CBD009D070F /* QrCode.swift */,
 			);
 			path = ClutterKnowledge;
 			sourceTree = "<group>";
@@ -210,6 +222,17 @@
 				B68267E51FFE2724009D070F /* WaterFlowViewHorLayout.swift */,
 			);
 			path = Collection;
+			sourceTree = "<group>";
+		};
+		B68267EB2002403A009D070F /* MyCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				B68267EC2002405E009D070F /* MyCalendarController.swift */,
+				B68267F220034CD1009D070F /* MyCalendarHeader.swift */,
+				B68267EE2002532B009D070F /* MyCalendarCollectionCell.swift */,
+				B68267F02003449B009D070F /* MyCalendarControl.swift */,
+			);
+			path = MyCalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +371,7 @@
 			files = (
 				B68267E81FFE273D009D070F /* HorCollectionController.swift in Sources */,
 				B6165BF11FFCA2DE0083D4CB /* ClazzA.swift in Sources */,
+				B68267F320034CD1009D070F /* MyCalendarHeader.swift in Sources */,
 				B6165BF01FFCA2DE0083D4CB /* SmallPoint.swift in Sources */,
 				B68267E61FFE2724009D070F /* WaterFlowViewHorLayout.swift in Sources */,
 				B6165BBB1FFCA2220083D4CB /* ViewController.swift in Sources */,
@@ -358,8 +382,10 @@
 				B68267E41FFE1EDA009D070F /* WaterFlowViewsLayout.swift in Sources */,
 				B6165BF51FFCA2DE0083D4CB /* FilesPath.swift in Sources */,
 				B6481E3E1FFDCD710075A1A7 /* CollectionHeader.swift in Sources */,
+				B68267ED2002405E009D070F /* MyCalendarController.swift in Sources */,
 				B6165BFC1FFCA2EC0083D4CB /* SubController.swift in Sources */,
 				B6165BFD1FFCA2EC0083D4CB /* MainController.swift in Sources */,
+				B68267EF2002532B009D070F /* MyCalendarCollectionCell.swift in Sources */,
 				B68267E21FFE1EBE009D070F /* MyVerCollection.swift in Sources */,
 				B6165BEF1FFCA2DE0083D4CB /* UIColorExpand.swift in Sources */,
 				B6165BFB1FFCA2EC0083D4CB /* SideController.swift in Sources */,
@@ -367,6 +393,8 @@
 				B6481E3C1FFDCD650075A1A7 /* CollectionFooter.swift in Sources */,
 				B6165BF31FFCA2DE0083D4CB /* GCDExpond.swift in Sources */,
 				B6481E3A1FFCE0CB0075A1A7 /* CollectionController.swift in Sources */,
+				B68267F12003449B009D070F /* MyCalendarControl.swift in Sources */,
+				B68267EA1FFF4CBE009D070F /* QrCode.swift in Sources */,
 				B6165BF21FFCA2DE0083D4CB /* MachineModels.swift in Sources */,
 				B68267E01FFDFE2A009D070F /* WaterFlowViewLayout.swift in Sources */,
 			);

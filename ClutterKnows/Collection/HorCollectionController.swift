@@ -15,7 +15,7 @@ class HorCollectionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //竖直 瀑布流的代码演示
+        //横向 瀑布流的代码演示
         let flowLayout = WaterFlowViewHorLayout()
         
         let rect = CGRect(x: 0, y: 0, width: DEVICE_WIDTH, height: DEVICE_HEIGHT)

@@ -40,6 +40,36 @@ class MachineModels: NSObject {
         activity.stopAnimating()
         
         let uuid = CFUUIDCreate
+        
+        let s = ModelMachine.modelFromSize(size: DEVICE_RECT.size)
+        print(s)
+    }
+    
+    
+}
+
+//MARK: - 通过屏幕判断大概机型（简易方法）
+enum ModelMachineType {
+    case model_4s // 4/4s
+    case model_5s // 5/5s/5c
+    case model_6s // 6/6s/7/8
+    case model_6p // 6+/6s+/7+/8+
+    case model_x  // x
+}
+
+class ModelMachine {
+    
+    class func modelFromSize(size: CGSize) -> ModelMachineType {
+        if size.width == 375 && size.height == 812 {
+            return .model_x
+        } else if size.width == 414 && size.height == 736 {
+            return .model_6p
+        }  else if size.width == 375 && size.height == 667 {
+            return .model_6s
+        } else if size.width == 320 && size.height == 568 {
+            return .model_5s
+        }
+        return .model_4s
     }
     
 }

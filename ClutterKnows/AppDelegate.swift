@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.white
         window = UIWindow.init(frame: UIScreen.main.bounds)
         //window?.rootViewController = leftSide
-        window?.rootViewController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = UINavigationController(rootViewController: MyCalendarController())
         window?.makeKeyAndVisible()
         
         FilesPath().path()
