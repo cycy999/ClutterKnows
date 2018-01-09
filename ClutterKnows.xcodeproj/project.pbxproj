@@ -16,7 +16,6 @@
 		B6165BD91FFCA2220083D4CB /* ClutterKnowsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BD81FFCA2220083D4CB /* ClutterKnowsUITests.swift */; };
 		B6165BEF1FFCA2DE0083D4CB /* UIColorExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BE71FFCA2DD0083D4CB /* UIColorExpand.swift */; };
 		B6165BF01FFCA2DE0083D4CB /* SmallPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BE81FFCA2DD0083D4CB /* SmallPoint.swift */; };
-		B6165BF11FFCA2DE0083D4CB /* ClazzA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BE91FFCA2DD0083D4CB /* ClazzA.swift */; };
 		B6165BF21FFCA2DE0083D4CB /* MachineModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BEA1FFCA2DE0083D4CB /* MachineModels.swift */; };
 		B6165BF31FFCA2DE0083D4CB /* GCDExpond.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BEB1FFCA2DE0083D4CB /* GCDExpond.swift */; };
 		B6165BF41FFCA2DE0083D4CB /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BEC1FFCA2DE0083D4CB /* FontFamily.swift */; };
@@ -30,16 +29,19 @@
 		B6481E3C1FFDCD650075A1A7 /* CollectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3B1FFDCD650075A1A7 /* CollectionFooter.swift */; };
 		B6481E3E1FFDCD710075A1A7 /* CollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3D1FFDCD710075A1A7 /* CollectionHeader.swift */; };
 		B6481E401FFDD1F10075A1A7 /* MyCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3F1FFDD1F10075A1A7 /* MyCollectionController.swift */; };
+		B66F70A720045E1A00557D20 /* CommonSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F70A620045E1A00557D20 /* CommonSave.swift */; };
+		B66F70A92004673400557D20 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B66F70A82004673400557D20 /* libsqlite3.tbd */; };
+		B66F70EF200499B700557D20 /* QRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F70EE200499B700557D20 /* QRCodeController.swift */; };
 		B68267E01FFDFE2A009D070F /* WaterFlowViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267DF1FFDFE2A009D070F /* WaterFlowViewLayout.swift */; };
 		B68267E21FFE1EBE009D070F /* MyVerCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E11FFE1EBE009D070F /* MyVerCollection.swift */; };
 		B68267E41FFE1EDA009D070F /* WaterFlowViewsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E31FFE1EDA009D070F /* WaterFlowViewsLayout.swift */; };
 		B68267E61FFE2724009D070F /* WaterFlowViewHorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E51FFE2724009D070F /* WaterFlowViewHorLayout.swift */; };
 		B68267E81FFE273D009D070F /* HorCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E71FFE273D009D070F /* HorCollectionController.swift */; };
-		B68267EA1FFF4CBE009D070F /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267E91FFF4CBD009D070F /* QrCode.swift */; };
 		B68267ED2002405E009D070F /* MyCalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267EC2002405E009D070F /* MyCalendarController.swift */; };
 		B68267EF2002532B009D070F /* MyCalendarCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267EE2002532B009D070F /* MyCalendarCollectionCell.swift */; };
 		B68267F12003449B009D070F /* MyCalendarControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267F02003449B009D070F /* MyCalendarControl.swift */; };
 		B68267F320034CD1009D070F /* MyCalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267F220034CD1009D070F /* MyCalendarHeader.swift */; };
+		B68267F62003712A009D070F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B68267F52003711B009D070F /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +77,6 @@
 		B6165BDA1FFCA2220083D4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6165BE71FFCA2DD0083D4CB /* UIColorExpand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExpand.swift; sourceTree = "<group>"; };
 		B6165BE81FFCA2DD0083D4CB /* SmallPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallPoint.swift; sourceTree = "<group>"; };
-		B6165BE91FFCA2DD0083D4CB /* ClazzA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClazzA.swift; sourceTree = "<group>"; };
 		B6165BEA1FFCA2DE0083D4CB /* MachineModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineModels.swift; sourceTree = "<group>"; };
 		B6165BEB1FFCA2DE0083D4CB /* GCDExpond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDExpond.swift; sourceTree = "<group>"; };
 		B6165BEC1FFCA2DE0083D4CB /* FontFamily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
@@ -89,16 +90,19 @@
 		B6481E3B1FFDCD650075A1A7 /* CollectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooter.swift; sourceTree = "<group>"; };
 		B6481E3D1FFDCD710075A1A7 /* CollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeader.swift; sourceTree = "<group>"; };
 		B6481E3F1FFDD1F10075A1A7 /* MyCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionController.swift; sourceTree = "<group>"; };
+		B66F70A620045E1A00557D20 /* CommonSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSave.swift; sourceTree = "<group>"; };
+		B66F70A82004673400557D20 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B66F70EE200499B700557D20 /* QRCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeController.swift; sourceTree = "<group>"; };
 		B68267DF1FFDFE2A009D070F /* WaterFlowViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowViewLayout.swift; sourceTree = "<group>"; };
 		B68267E11FFE1EBE009D070F /* MyVerCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVerCollection.swift; sourceTree = "<group>"; };
 		B68267E31FFE1EDA009D070F /* WaterFlowViewsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowViewsLayout.swift; sourceTree = "<group>"; };
 		B68267E51FFE2724009D070F /* WaterFlowViewHorLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowViewHorLayout.swift; sourceTree = "<group>"; };
 		B68267E71FFE273D009D070F /* HorCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorCollectionController.swift; sourceTree = "<group>"; };
-		B68267E91FFF4CBD009D070F /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
 		B68267EC2002405E009D070F /* MyCalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarController.swift; sourceTree = "<group>"; };
 		B68267EE2002532B009D070F /* MyCalendarCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarCollectionCell.swift; sourceTree = "<group>"; };
 		B68267F02003449B009D070F /* MyCalendarControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarControl.swift; sourceTree = "<group>"; };
 		B68267F220034CD1009D070F /* MyCalendarHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarHeader.swift; sourceTree = "<group>"; };
+		B68267F52003711B009D070F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66F70A92004673400557D20 /* libsqlite3.tbd in Frameworks */,
+				B68267F62003712A009D070F /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +139,7 @@
 				B6165BCC1FFCA2220083D4CB /* ClutterKnowsTests */,
 				B6165BD71FFCA2220083D4CB /* ClutterKnowsUITests */,
 				B6165BB61FFCA2220083D4CB /* Products */,
+				B68267F42003711A009D070F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,15 +202,15 @@
 		B6165BFF1FFCA3BB0083D4CB /* ClutterKnowledge */ = {
 			isa = PBXGroup;
 			children = (
-				B6165BE91FFCA2DD0083D4CB /* ClazzA.swift */,
 				B6165BED1FFCA2DE0083D4CB /* FilesPath.swift */,
+				B66F70A620045E1A00557D20 /* CommonSave.swift */,
 				B6165BEC1FFCA2DE0083D4CB /* FontFamily.swift */,
 				B6165BEB1FFCA2DE0083D4CB /* GCDExpond.swift */,
 				B6165BEA1FFCA2DE0083D4CB /* MachineModels.swift */,
 				B6165BE81FFCA2DD0083D4CB /* SmallPoint.swift */,
 				B6165BE71FFCA2DD0083D4CB /* UIColorExpand.swift */,
 				B6165C021FFCAA9D0083D4CB /* DateExpand.swift */,
-				B68267E91FFF4CBD009D070F /* QrCode.swift */,
+				B66F70EE200499B700557D20 /* QRCodeController.swift */,
 			);
 			path = ClutterKnowledge;
 			sourceTree = "<group>";
@@ -233,6 +240,15 @@
 				B68267F02003449B009D070F /* MyCalendarControl.swift */,
 			);
 			path = MyCalendar;
+			sourceTree = "<group>";
+		};
+		B68267F42003711A009D070F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B66F70A82004673400557D20 /* libsqlite3.tbd */,
+				B68267F52003711B009D070F /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,8 +386,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B68267E81FFE273D009D070F /* HorCollectionController.swift in Sources */,
-				B6165BF11FFCA2DE0083D4CB /* ClazzA.swift in Sources */,
 				B68267F320034CD1009D070F /* MyCalendarHeader.swift in Sources */,
+				B66F70A720045E1A00557D20 /* CommonSave.swift in Sources */,
 				B6165BF01FFCA2DE0083D4CB /* SmallPoint.swift in Sources */,
 				B68267E61FFE2724009D070F /* WaterFlowViewHorLayout.swift in Sources */,
 				B6165BBB1FFCA2220083D4CB /* ViewController.swift in Sources */,
@@ -391,10 +407,10 @@
 				B6165BFB1FFCA2EC0083D4CB /* SideController.swift in Sources */,
 				B6165BF41FFCA2DE0083D4CB /* FontFamily.swift in Sources */,
 				B6481E3C1FFDCD650075A1A7 /* CollectionFooter.swift in Sources */,
+				B66F70EF200499B700557D20 /* QRCodeController.swift in Sources */,
 				B6165BF31FFCA2DE0083D4CB /* GCDExpond.swift in Sources */,
 				B6481E3A1FFCE0CB0075A1A7 /* CollectionController.swift in Sources */,
 				B68267F12003449B009D070F /* MyCalendarControl.swift in Sources */,
-				B68267EA1FFF4CBE009D070F /* QrCode.swift in Sources */,
 				B6165BF21FFCA2DE0083D4CB /* MachineModels.swift in Sources */,
 				B68267E01FFDFE2A009D070F /* WaterFlowViewLayout.swift in Sources */,
 			);
@@ -563,8 +579,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6YF5Q3S3Y5;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/ClutterKnows";
 				INFOPLIST_FILE = ClutterKnows/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qt.ClutterKnows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -579,8 +597,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6YF5Q3S3Y5;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/ClutterKnows";
 				INFOPLIST_FILE = ClutterKnows/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qt.ClutterKnows;
 				PRODUCT_NAME = "$(TARGET_NAME)";

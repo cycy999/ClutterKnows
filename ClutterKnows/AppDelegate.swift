@@ -28,12 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.white
         window = UIWindow.init(frame: UIScreen.main.bounds)
         //window?.rootViewController = leftSide
-        window?.rootViewController = UINavigationController(rootViewController: MyCalendarController())
+        window?.rootViewController = UINavigationController(rootViewController: viewController)
         window?.makeKeyAndVisible()
         
         FilesPath().path()
         MachineModels().printDevice()
-        DateExpand().test()
+        //DateExpand().test()
         return true
     }
 

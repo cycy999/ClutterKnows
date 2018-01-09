@@ -41,7 +41,8 @@ class MyCalendarControl: NSObject {
     override init() {
         super.init()
         calendar.locale = Locale(identifier: "zh_CN")
-        calendar.timeZone = TimeZone(abbreviation: "EST")!
+        //calendar.timeZone = TimeZone(abbreviation: "EST")!
+        calendar.timeZone = TimeZone(secondsFromGMT: 60 * 60 * 8)!
         currentMonth = calendar.dateComponents([.year, .month], from: date)
         todayDate = calendar.dateComponents([.year, .month, .day], from: date)
     }
@@ -54,7 +55,6 @@ class MyCalendarControl: NSObject {
         for index in 1 ..< firstIndex + 1 {
             let date = dateOfMonthSelectDay(selectedDay: -firstIndex + index)
             let comps = calendar.dateComponents([.year, .month, .day], from: date!)
-            print(comps)
             models.append(comps)
         }
         for index in 1 ..< daysOfMonth(date: date) + 1 {
@@ -66,7 +66,6 @@ class MyCalendarControl: NSObject {
         for index in 0 ..< 6 - lastIndex {
             let date = dateOfMonthSelectDay(selectedDay: daysOfMonth(date: self.date) + index + 1)
             let comps = calendar.dateComponents([.year, .month, .day], from: date!)
-            print(comps)
             models.append(comps)
         }
         calendarModels = models

@@ -41,8 +41,8 @@ class MachineModels: NSObject {
         
         let uuid = CFUUIDCreate
         
-        let s = ModelMachine.modelFromSize(size: DEVICE_RECT.size)
-        print(s)
+        let size = ModelMachine.modelFromSize(size: DEVICE_RECT.size)
+        print(size)
     }
     
     
