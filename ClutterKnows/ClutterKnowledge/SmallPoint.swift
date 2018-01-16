@@ -85,7 +85,31 @@ class SmallPoint: NSObject {
         return myMutableString
     }
     
+//    MARK: - lineBreakMode：设置标签文字过长时的显示方式。
+//    label.lineBreakMode = NSLineBreakByCharWrapping;    //以字符为显示单位显示，后面部分省略不显示。
+//    label.lineBreakMode = NSLineBreakByClipping;        //剪切与文本宽度相同的内容长度，后半部分被删除。
+//    label.lineBreakMode = NSLineBreakByTruncatingHead;  //前面部分文字以……方式省略，显示尾部文字内容。
+//    label.lineBreakMode = NSLineBreakByTruncatingMiddle;    //中间的内容以……方式省略，显示头尾的文字内容。
+//    label.lineBreakMode = NSLineBreakByTruncatingTail;  //结尾部分的内容以……方式省略，显示头的文字内容。
+//    label.lineBreakMode = NSLineBreakByWordWrapping;    //以单词为显示单位显示，后面部分省略不显示。
+    
+    //navigationBar底部的黑（白）线
+    func findNavBarHarLineImageView(v: UIView) -> UIView? {
+        if v.isKind(of: UIImageView.self) && v.bounds.size.height <= 1{
+            return v
+        }
+        for subview in v.subviews {
+            if let img = self.findNavBarHarLineImageView(v: subview) {
+                return img
+            }
+        }
+        return nil
+    }
+    //navBarHairlineImageView = findNavBarHarLineImageView(v: (navigationController?.navigationBar)!)
 }
+
+//关于支付宝支付的相关参数，可做参考
+//alipay.pay(sign: "app_id=20177383904816397&method=alipay.trade.app.pay&charset=utf-8&sign_type=RSA2&timestamp=2017-06-30 14:59:58&version=1.0&format=json&notify_url=http://ceshidizhi.com:8080/store-manage/payment/callback/notifyAlipayApp.ihtml&biz_content={\"total_amount\":\"0.01\",\"timeout_express\":\"30m\",\"product_code\":\"QUICK_MSECURITY_PAY\",\"subject\":\"测试商品1\",\"out_trade_no\":\"10120170630123671234537281\"}&sign=df15Q+AQ3lZLlF95wNdXKRpc35nmpDeEL8XrlIlTbfTQE39Z+RTRrOlSxuBtAqZpCzZy0ulxlkI64Y85PFiU9E6x+vnaimFTMuVNUYqasfdsaNaH3+85dhTk5u0SxV5n/fOrklx+B1SzADl4218/lhjz4bNnMqE6lXiJAFdfasdsafdsafasfdsqZDFjmJxmnjI9nfH74lEP+yF4X68uRsdUFrXaEt2CciyL2RVNj5ZJcJ7njjwtAcgdcHblA6j6qHqFRnrvdxV5i5VGQn1SHwpvMEAdsadsa1mBl7kDlCpWh/M1chCNdB79e3B1O8KsX7Iaz8g2snBr/y/wHU7YHfsnuLw==}")
 
 extension UIView {
     //isMy_label.frame = CGRect(x: 0, y: 0, width: 37, height: 25)
