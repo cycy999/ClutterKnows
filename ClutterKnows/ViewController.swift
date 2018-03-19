@@ -78,11 +78,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if indexPath.row == 4 {
             show(QRCodeController(), sender: nil)
         } else if indexPath.row == 5 {
-            
+            show(ButtonsController(), sender: nil)
         } else if indexPath.row == 6 {
+            //ScreenHOT.getScreenImage()
             
         }
     }
 
 }
+
 
