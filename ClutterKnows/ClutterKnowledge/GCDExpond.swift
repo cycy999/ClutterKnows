@@ -8,13 +8,23 @@
 
 import UIKit
 
-class GCDExpond: UIColor {
+class GCDExpond: NSObject {
 
     //GCD有六个优先级，background，utility，default，userInitiated，userInteractive
     //userInteractive>default>unspecified>userInitiated>utility>background
     //GCD编程的核心就是调度队列（dispatch queue）。dispatch queue是一个FIFO（先进先出）的队列，它保证了GCD任务按照FIFO的顺序执行，即第一个添加到dispatch queue中的任务，第一个执行，第二个添加到dispatch queue中的任务第二个执行，如此直到终点。所有的dispatch queue都是线程安全的，你能从多个线程中并行的访问他们。
     
+    //http://blog.csdn.net/Hello_Hwc/article/details/54293280
+    
+    
     func getMain() {
+        
+        //主队列/全局队列获取
+        let  mainQueue = DispatchQueue.main
+        let globalQueue = DispatchQueue.global()
+        let globalQueueWithQos = DispatchQueue.global(qos: .userInitiated)
+        print(mainQueue, globalQueue, globalQueueWithQos)
+
         //主队列
         DispatchQueue.main.async {
             
@@ -102,4 +112,26 @@ class GCDExpond: UIColor {
             }
         }
     }
+}
+
+extension GCDExpond {
+    
+    //GCD使用步骤：1.创建队列（串行或并发）；2.将任务添加到队列的等待队列中，系统根据任务类型执行（同步或异步）
+    //1.同步执行 + 并发队列
+    //2.异步执行 + 并发队列
+    //3.同步执行 + 串发队列
+    //4.异步执行 + 串发队列
+
+    func test() {
+        
+    }
+    
+    
+    func syncConcurrent() {
+        print()
+        print("syncConcurrent---begin")
+        let queue = DispatchQueue(label: "com")
+    }
+    
+    
 }

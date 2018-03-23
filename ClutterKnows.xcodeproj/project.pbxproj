@@ -25,6 +25,7 @@
 		B6165BFC1FFCA2EC0083D4CB /* SubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BF81FFCA2EC0083D4CB /* SubController.swift */; };
 		B6165BFD1FFCA2EC0083D4CB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BF91FFCA2EC0083D4CB /* MainController.swift */; };
 		B6165C031FFCAA9D0083D4CB /* DateExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165C021FFCAA9D0083D4CB /* DateExpand.swift */; };
+		B63EF0CB2064F80D0016D704 /* CornerRaidons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EF0CA2064F80D0016D704 /* CornerRaidons.swift */; };
 		B6481E3A1FFCE0CB0075A1A7 /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E391FFCE0CB0075A1A7 /* CollectionController.swift */; };
 		B6481E3C1FFDCD650075A1A7 /* CollectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3B1FFDCD650075A1A7 /* CollectionFooter.swift */; };
 		B6481E3E1FFDCD710075A1A7 /* CollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6481E3D1FFDCD710075A1A7 /* CollectionHeader.swift */; };
@@ -89,6 +90,7 @@
 		B6165BF81FFCA2EC0083D4CB /* SubController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubController.swift; sourceTree = "<group>"; };
 		B6165BF91FFCA2EC0083D4CB /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		B6165C021FFCAA9D0083D4CB /* DateExpand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExpand.swift; sourceTree = "<group>"; };
+		B63EF0CA2064F80D0016D704 /* CornerRaidons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRaidons.swift; sourceTree = "<group>"; };
 		B6481E391FFCE0CB0075A1A7 /* CollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionController.swift; sourceTree = "<group>"; };
 		B6481E3B1FFDCD650075A1A7 /* CollectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooter.swift; sourceTree = "<group>"; };
 		B6481E3D1FFDCD710075A1A7 /* CollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeader.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				B6165BE71FFCA2DD0083D4CB /* UIColorExpand.swift */,
 				B6165C021FFCAA9D0083D4CB /* DateExpand.swift */,
 				B66F70EE200499B700557D20 /* QRCodeController.swift */,
+				B63EF0CA2064F80D0016D704 /* CornerRaidons.swift */,
 			);
 			path = ClutterKnowledge;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				B68267E61FFE2724009D070F /* WaterFlowViewHorLayout.swift in Sources */,
 				B666275A200DDD2B00D81D97 /* ButtonsChosenView.swift in Sources */,
 				B6165BBB1FFCA2220083D4CB /* ViewController.swift in Sources */,
+				B63EF0CB2064F80D0016D704 /* CornerRaidons.swift in Sources */,
 				B6165C031FFCAA9D0083D4CB /* DateExpand.swift in Sources */,
 				B6165BB91FFCA2220083D4CB /* AppDelegate.swift in Sources */,
 				B6481E401FFDD1F10075A1A7 /* MyCollectionController.swift in Sources */,
