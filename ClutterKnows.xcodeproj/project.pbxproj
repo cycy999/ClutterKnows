@@ -46,6 +46,7 @@
 		B68267F320034CD1009D070F /* MyCalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68267F220034CD1009D070F /* MyCalendarHeader.swift */; };
 		B68267F62003712A009D070F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B68267F52003711B009D070F /* libsqlite3.0.tbd */; };
 		B69CB843205FA6190041156C /* ScreenHOT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69CB842205FA6190041156C /* ScreenHOT.swift */; };
+		B6B3E9A120735F9200E2770B /* Map_Filter_ReduceMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3E9A020735F9200E2770B /* Map_Filter_ReduceMore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		B68267F220034CD1009D070F /* MyCalendarHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarHeader.swift; sourceTree = "<group>"; };
 		B68267F52003711B009D070F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		B69CB842205FA6190041156C /* ScreenHOT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenHOT.swift; sourceTree = "<group>"; };
+		B6B3E9A020735F9200E2770B /* Map_Filter_ReduceMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_Filter_ReduceMore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 				B6165C021FFCAA9D0083D4CB /* DateExpand.swift */,
 				B66F70EE200499B700557D20 /* QRCodeController.swift */,
 				B63EF0CA2064F80D0016D704 /* CornerRaidons.swift */,
+				B6B3E9A020735F9200E2770B /* Map_Filter_ReduceMore.swift */,
 			);
 			path = ClutterKnowledge;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				B63EF0CB2064F80D0016D704 /* CornerRaidons.swift in Sources */,
 				B6165C031FFCAA9D0083D4CB /* DateExpand.swift in Sources */,
 				B6165BB91FFCA2220083D4CB /* AppDelegate.swift in Sources */,
+				B6B3E9A120735F9200E2770B /* Map_Filter_ReduceMore.swift in Sources */,
 				B6481E401FFDD1F10075A1A7 /* MyCollectionController.swift in Sources */,
 				B6165BFA1FFCA2EC0083D4CB /* LeftController.swift in Sources */,
 				B68267E41FFE1EDA009D070F /* WaterFlowViewsLayout.swift in Sources */,

@@ -34,8 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FilesPath().path()
         MachineModels().printDevice()
         //DateExpand().test()
-        GCDExpond().getMain()
-        GCDExpond().gcdTest()
+//        GCDExpond().getMain()
+//        GCDExpond().gcdTest()
+        
+        Map_Filter_ReduceMore().test()
+        
         return true
     }
 

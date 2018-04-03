@@ -85,6 +85,14 @@ class SmallPoint: NSObject {
         return myMutableString
     }
     
+    func testAttributeString() {
+        let a = NSMutableAttributedString(string: "已选项目 ", attributes: [NSAttributedStringKey.foregroundColor: UIColorExpand.getColor("333333")])
+        
+        a.append(NSAttributedString(string: "66", attributes: [NSAttributedStringKey.foregroundColor: UIColorExpand.getColor("45B173")]))
+        
+        UILabel().attributedText = a
+    }
+    
 //    MARK: - lineBreakMode：设置标签文字过长时的显示方式。
 //    label.lineBreakMode = NSLineBreakByCharWrapping;    //以字符为显示单位显示，后面部分省略不显示。
 //    label.lineBreakMode = NSLineBreakByClipping;        //剪切与文本宽度相同的内容长度，后半部分被删除。
@@ -93,7 +101,7 @@ class SmallPoint: NSObject {
 //    label.lineBreakMode = NSLineBreakByTruncatingTail;  //结尾部分的内容以……方式省略，显示头的文字内容。
 //    label.lineBreakMode = NSLineBreakByWordWrapping;    //以单词为显示单位显示，后面部分省略不显示。
     
-    //navigationBar底部的黑（白）线
+    //navigationBar底部的黑（白）线 //获取到的view隐藏即可隐藏navigationbar底部的白线
     func findNavBarHarLineImageView(v: UIView) -> UIView? {
         if v.isKind(of: UIImageView.self) && v.bounds.size.height <= 1{
             return v

@@ -41,7 +41,16 @@ class GCDExpond: NSObject {
             print("延时打印")
         }
         
+        //延迟操作时间
+        let delay_0 = DispatchTime.now() + Double(Int64(0.25 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        let delay = DispatchTime.now() + .seconds(1)
+        DispatchQueue.main.asyncAfter(deadline: delay, execute: {
+            //延迟操作内容
+        })
+        
     }
+    
+    
     
     /// GCD定时器倒计时⏳
     ///   - timeInterval: 循环间隔时间
