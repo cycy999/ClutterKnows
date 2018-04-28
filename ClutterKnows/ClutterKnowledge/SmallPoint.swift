@@ -13,6 +13,14 @@ let DEVICE_RECT:CGRect = screen.bounds
 let DEVICE_WIDTH = DEVICE_RECT.size.width
 let DEVICE_HEIGHT = DEVICE_RECT.size.height
 
+//重置控制台打印数据
+func MYLog<T>(_ message:T, file: String = #file, funcName: String = #function, lineNum: Int = #line) {
+    #if DEBUG
+        let fileName = (file as NSString).lastPathComponent
+        print("\(fileName):(\(lineNum))-\(message)")
+    #endif
+}
+
 class SmallPoint: NSObject {
     //MARK: - 1、获取一个唯一标识符
     class func get_unique_id() -> String {
@@ -56,7 +64,7 @@ class SmallPoint: NSObject {
         let dd = CAShapeLayer()
         let mdotteShapePath = CGMutablePath()
         dd.fillColor = UIColor.clear.cgColor
-        dd.strokeColor = UIColorExpand.viewBackGroundColor().cgColor
+        dd.strokeColor = UIColor.viewBackGroundColor().cgColor
         dd.lineWidth = 1.0
         mdotteShapePath.move(to: CGPoint(x: 0, y: 0))
         mdotteShapePath.addLine(to: CGPoint(x: DEVICE_WIDTH - 10, y: 0))
@@ -86,9 +94,9 @@ class SmallPoint: NSObject {
     }
     
     func testAttributeString() {
-        let a = NSMutableAttributedString(string: "已选项目 ", attributes: [NSAttributedStringKey.foregroundColor: UIColorExpand.getColor("333333")])
+        let a = NSMutableAttributedString(string: "已选项目 ", attributes: [NSAttributedStringKey.foregroundColor: UIColor.getColor("333333")])
         
-        a.append(NSAttributedString(string: "66", attributes: [NSAttributedStringKey.foregroundColor: UIColorExpand.getColor("45B173")]))
+        a.append(NSAttributedString(string: "66", attributes: [NSAttributedStringKey.foregroundColor: UIColor.getColor("45B173")]))
         
         UILabel().attributedText = a
     }

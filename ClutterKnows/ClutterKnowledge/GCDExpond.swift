@@ -48,6 +48,11 @@ class GCDExpond: NSObject {
             //延迟操作内容
         })
         
+        DispatchQueue.global().async {
+            DispatchQueue.main.async {
+                
+            }
+        }
     }
     
     

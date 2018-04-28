@@ -17,7 +17,7 @@ class ButtonsController: UIViewController {
         
         view.addSubview(buttonsChosenView)
         view.backgroundColor = UIColor.white
-        buttonsChosenView.backgroundColor = UIColorExpand.viewBackGroundColor()
+        buttonsChosenView.backgroundColor = UIColor.viewBackGroundColor()
         print(buttonsChosenView.contentSize)
         print(buttonsChosenView.contentOffset)
         buttonsChosenView.contentSize = CGSize(width: DEVICE_WIDTH * 2, height: 40)

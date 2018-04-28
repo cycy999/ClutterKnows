@@ -24,20 +24,20 @@ class DateExpand: NSObject {
         getAllDaysWithCalendar()
     }
     
-    func dateFromString(str: String) -> Date? {
+    func dateFromString(str: String, dateFormat: String = "yyyy-MM-dd") -> Date? {
         let dateformatter = DateFormatter()
         dateformatter.locale = Locale.current //设置时区
-        dateformatter.dateFormat = "yyyy-MM-dd"
+        dateformatter.dateFormat = dateFormat
         
         return dateformatter.date(from: str)
     }
     
     
-    func stringFromDate(date: Date) -> String {
+    func stringFromDate(date: Date, dateFormat: String = "yyyy-MM-dd HH:mm:ss") -> String {
         
         let dateformatter = DateFormatter()
         dateformatter.locale = Locale.current //设置时区
-        dateformatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateformatter.dateFormat = dateFormat
         
         return dateformatter.string(from: date)
     }
@@ -138,6 +138,78 @@ class DateExpand: NSObject {
         //31
     }
     
+    //MARK: - 昨天
+    func getYesterday() {
+        let date = Date(timeIntervalSinceNow: -16 * 60 * 60)
+        print(date)
+        print(stringFromDate(date: date))
+    }
+    
+    //MARK: - 上周 开始-结束 时间
+    func getLastWeek() {
+        let calender = Calendar(identifier: Calendar.Identifier.gregorian)
+        var comps = DateComponents()
+        comps = calender.dateComponents([.year, .month, .day, .weekday], from: Date())
+        let currentWeekDay = getCurrentWeedDay(i: comps.weekday)
+        let weekFirstDay = calender.date(from: comps)?.addingTimeInterval(TimeInterval(8 * 60 * 60 - (currentWeekDay - 1) * 24 * 60 * 60))
+        let weekLastDay = calender.date(from: comps)?.addingTimeInterval(TimeInterval(8 * 60 * 60 + (7 - currentWeekDay) * 24 * 60 * 60))
+        print(weekFirstDay as Any, weekLastDay as Any)
+    }
+    
+    //MARK: - 本周 开始-结束 时间
+    func getCurrentWeek() {
+        let calender = Calendar(identifier: Calendar.Identifier.gregorian)
+        var comps = DateComponents()
+        comps = calender.dateComponents([.year, .month, .day, .weekday], from: Date())
+        print(comps)
+        let currentWeekDay = getCurrentWeedDay(i: comps.weekday)
+        let weekFirstDay = calender.date(from: comps)?.addingTimeInterval(TimeInterval(8 * 60 * 60 - ( 7 + currentWeekDay - 1) * 24 * 60 * 60))
+        let weekLastDay = calender.date(from: comps)?.addingTimeInterval(TimeInterval(8 * 60 * 60 - currentWeekDay * 24 * 60 * 60))
+        print(weekFirstDay as Any, weekLastDay as Any)
+    }
+    
+    //系统星期对应数字和实际中有出入（如周四显示5），做对应的调整
+    func getCurrentWeedDay(i: Int?) -> Int {
+        if let i = i {
+            let newValue = i - 1
+            if newValue == 0 {
+                return 7
+            }
+            return newValue
+        }
+        return 0
+    }
+    
+    //MARK: - 这个月第一天和最后一天
+    func getCurrentMonth() {
+        let calender = Calendar(identifier: Calendar.Identifier.gregorian)
+        var comps = DateComponents()
+        comps = calender.dateComponents([.year, .month, .day], from: Date())
+        let date = Date()
+        
+        let range = calender.range(of: Calendar.Component.day, in: Calendar.Component.month, for: date)
+        comps.day = 1
+        let monthFirstDay = calender.date(from: comps)?.addingTimeInterval(TimeInterval(8 * 60 * 60))
+        comps.day = range!.count
+        let monthLastDay = calender.date(from: comps)?.addingTimeInterval(TimeInterval(8 * 60 * 60))
+        print(monthFirstDay as Any, monthLastDay as Any)
+    }
+    
+    //MARK: - 上个月第一天和最后一天
+    func getBeforeMonth() {
+        let calender = Calendar(identifier: Calendar.Identifier.gregorian)
+        var comps = DateComponents()
+        comps = calender.dateComponents([.year, .month, .day], from: Date())
+        comps.day = 1
+        //获取上月最后10s前的时间戳,最后一天
+        let monthLastDay = calender.date(from: comps)?.addingTimeInterval(TimeInterval(-10))
+        var newComps = calender.dateComponents([.year, .month, .day], from: monthLastDay!)
+        newComps.day = 1
+        let monthFirstDay = calender.date(from: newComps)?.addingTimeInterval(TimeInterval(8 * 60 * 60))
+        
+        print(monthFirstDay as Any, monthLastDay as Any)
+    }
+    
     func getAllDaysWithCalendar() {
         let dayCount = getNumOfDaysInMonth()
         let formatter = DateFormatter()
@@ -151,7 +223,6 @@ class DateExpand: NSObject {
             let sr = str + "-\(i)" + " 09"
             if let date = formatter.date(from: sr) {
                 allDaysArray.append(date)
-                
                 print(date)
             }
         }

@@ -38,7 +38,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        GCDExpond().gcdTest()
         
         Map_Filter_ReduceMore().test()
-        
+        "字符串".transformToPinyin()
+        "字符chuan啊".transformToPinyin()
+        print("字符串".isIncludeChinese())
+        print("字符chuan啊".isIncludeChinese())
+        print("hahah".isIncludeChinese())
+
         return true
     }
 

@@ -45,7 +45,7 @@ extension MyCalendarController: UICollectionViewDelegate, UICollectionViewDataSo
         collectionView.dataSource = self
         collectionView.register(MyCalendarCollectionCell.self, forCellWithReuseIdentifier: "cell")
         collectionView.register(MyCalendarHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "MyCalendarHeader")
-        collectionView.backgroundColor = UIColorExpand.viewBackGroundColor()
+        collectionView.backgroundColor = UIColor.viewBackGroundColor()
         view.addSubview(collectionView)
     }
     

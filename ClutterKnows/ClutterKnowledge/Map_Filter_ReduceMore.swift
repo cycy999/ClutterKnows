@@ -8,9 +8,9 @@
 
 import UIKit
 
-class Map_Filter_ReduceMore: NSObject {
 
-    
+
+class Map_Filter_ReduceMore: NSObject {
     
     func test() {
         

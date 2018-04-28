@@ -45,7 +45,7 @@ extension MyVerCollection: UICollectionViewDelegate, UICollectionViewDataSource 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = UIColorExpand().randomColor()
+        cell.backgroundColor = UIColor().randomColor()
         var label: UILabel?
         for v in cell.contentView.subviews {
             if v.tag == 666 {
