@@ -95,5 +95,52 @@ extension String {
         //替换字符串  Hnewo
         str.replacingCharacters(in: startIndex...endIndex, with: "new")
 
+        print(str.contains("cd"))//是否包含子串
+        regexEmail(str: "")
     }
+    
+    /**
+     正则表达判断是否含有结果值
+     - parameter pattern: 一个字符串类型的正则表达式
+     - parameter str: 需要比较判断的对象
+     - returns: 返回布尔值判断结果
+     - warning: 注意匹配到结果的话就会返回true，没有匹配到结果就会返回false
+     */
+    func regex(pattern: String, str: String) -> Bool {
+        let regex = try! NSRegularExpression(pattern: pattern, options: [NSRegularExpression.Options.caseInsensitive])
+        let resultNum = regex.numberOfMatches(in: str, options: NSRegularExpression.MatchingOptions.init(rawValue: 0), range: NSMakeRange(0, str.count))
+        if resultNum > 1 {
+            return true
+        }
+        return false
+    }
+    
+    //匹配有效邮箱
+    func regexEmail(str: String) {
+        let email = "jay734138477@qq.com"
+        let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
+        let isValid = predicate.evaluate(with: email)
+        print(isValid ? "正确的邮箱地址" : "错误的邮箱地址")
+    }
+    
+    /**
+     //用户名验证（允许使用小写字母、数字、下滑线、横杠，一共3~16个字符）
+     ^[a-z0-9_-]{3,16}$
+     
+     //Email验证
+     ^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
+     
+     //手机号码验证
+     ^1[0-9]{10}$
+     
+     //URL验证
+     ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$
+       
+     //IP地址验证
+     ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+       
+     //html标签验证
+     ^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$
+     */
 }
