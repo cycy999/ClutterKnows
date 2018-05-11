@@ -17,9 +17,6 @@ class MachineModels: NSObject {
     let deviceUUID = UIDevice.current.identifierForVendor?.uuidString //获取设备唯一标识符
     let deviceModel = UIDevice.current.model //获取设备的型号
     
-    
-    
-    
     func printDevice() {
         print(deviceName)
         print(sysName)

@@ -122,6 +122,17 @@ class SmallPoint: NSObject {
         return nil
     }
     //navBarHairlineImageView = findNavBarHarLineImageView(v: (navigationController?.navigationBar)!)
+    
+    //MARK: - 修改导航栏背景色
+    //self.navigationController?.navigationBar.barTintColor = UIColor(red: 55/255, green: 186/255, blue: 89/255, alpha: 1)
+    //修改导航栏文字颜色
+    //self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+    //修改导航栏按钮颜色
+    //self.navigationController?.navigationBar.tintColor = UIColor.white
+    //修改导航栏背景图片
+    //如果背景图片不需要延伸到状态栏后面，那么背景图片高度是44点（88像素）
+    //如果需要把导航栏也包含在背景图片下，那么背景图片高度改为64点（128像素）。
+    //self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "bg5"), for: .default)
 }
 
 //关于支付宝支付的相关参数，可做参考

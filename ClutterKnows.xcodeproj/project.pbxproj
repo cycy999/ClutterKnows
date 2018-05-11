@@ -25,6 +25,9 @@
 		B6165BFC1FFCA2EC0083D4CB /* SubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BF81FFCA2EC0083D4CB /* SubController.swift */; };
 		B6165BFD1FFCA2EC0083D4CB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165BF91FFCA2EC0083D4CB /* MainController.swift */; };
 		B6165C031FFCAA9D0083D4CB /* DateExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6165C021FFCAA9D0083D4CB /* DateExpand.swift */; };
+		B62871DB209EB262000C3BEE /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62871DA209EB262000C3BEE /* ClockViewController.swift */; };
+		B62871DD209FE39A000C3BEE /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62871DC209FE39A000C3BEE /* ReadMe.swift */; };
+		B62871E0209FE905000C3BEE /* LockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62871DF209FE905000C3BEE /* LockViewController.swift */; };
 		B632DC22207B0B95007B4155 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632DC21207B0B94007B4155 /* UIView+Extension.swift */; };
 		B632DC24207B0B9C007B4155 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632DC23207B0B9C007B4155 /* UIColor+Extension.swift */; };
 		B632DC26207B0BA2007B4155 /* String+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632DC25207B0BA2007B4155 /* String+Extenstion.swift */; };
@@ -50,6 +53,7 @@
 		B69CB843205FA6190041156C /* ScreenHOT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69CB842205FA6190041156C /* ScreenHOT.swift */; };
 		B6B3E9A120735F9200E2770B /* Map_Filter_ReduceMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3E9A020735F9200E2770B /* Map_Filter_ReduceMore.swift */; };
 		B6B3E9A3207471B500E2770B /* ViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3E9A2207471B500E2770B /* ViewControllerCell.swift */; };
+		B6D9978920A5411D005FB90F /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9978820A5411D005FB90F /* UIImage+Gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,9 @@
 		B6165BF81FFCA2EC0083D4CB /* SubController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubController.swift; sourceTree = "<group>"; };
 		B6165BF91FFCA2EC0083D4CB /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		B6165C021FFCAA9D0083D4CB /* DateExpand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExpand.swift; sourceTree = "<group>"; };
+		B62871DA209EB262000C3BEE /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		B62871DC209FE39A000C3BEE /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
+		B62871DF209FE905000C3BEE /* LockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewController.swift; sourceTree = "<group>"; };
 		B632DC21207B0B94007B4155 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B632DC23207B0B9C007B4155 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B632DC25207B0BA2007B4155 /* String+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extenstion.swift"; sourceTree = "<group>"; };
@@ -119,6 +126,7 @@
 		B69CB842205FA6190041156C /* ScreenHOT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenHOT.swift; sourceTree = "<group>"; };
 		B6B3E9A020735F9200E2770B /* Map_Filter_ReduceMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_Filter_ReduceMore.swift; sourceTree = "<group>"; };
 		B6B3E9A2207471B500E2770B /* ViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCell.swift; sourceTree = "<group>"; };
+		B6D9978820A5411D005FB90F /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		DE95AD3A02D5DA518199CAD6 /* Pods-ClutterKnows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutterKnows.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClutterKnows/Pods-ClutterKnows.release.xcconfig"; sourceTree = "<group>"; };
 		F8CF7FE95FA160AA51B8797C /* Pods_ClutterKnows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClutterKnows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9797C3F6B6835B16AB1933 /* Pods-ClutterKnows.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClutterKnows.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClutterKnows/Pods-ClutterKnows.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +193,9 @@
 				B6165BF91FFCA2EC0083D4CB /* MainController.swift */,
 				B6165BF81FFCA2EC0083D4CB /* SubController.swift */,
 				B66F713F2005F03600557D20 /* Header.h */,
+				B62871DC209FE39A000C3BEE /* ReadMe.swift */,
+				B62871DE209FE8E2000C3BEE /* Lock */,
+				B62871D7209EB1F1000C3BEE /* CustomClock */,
 				B6481E381FFCE0420075A1A7 /* Collection */,
 				B68267EB2002403A009D070F /* MyCalendar */,
 				B6662758200DDCA100D81D97 /* ChooseButtons */,
@@ -239,8 +250,25 @@
 				B632DC21207B0B94007B4155 /* UIView+Extension.swift */,
 				B632DC23207B0B9C007B4155 /* UIColor+Extension.swift */,
 				B632DC25207B0BA2007B4155 /* String+Extenstion.swift */,
+				B6D9978820A5411D005FB90F /* UIImage+Gif.swift */,
 			);
 			path = ClutterKnowledge;
+			sourceTree = "<group>";
+		};
+		B62871D7209EB1F1000C3BEE /* CustomClock */ = {
+			isa = PBXGroup;
+			children = (
+				B62871DA209EB262000C3BEE /* ClockViewController.swift */,
+			);
+			path = CustomClock;
+			sourceTree = "<group>";
+		};
+		B62871DE209FE8E2000C3BEE /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				B62871DF209FE905000C3BEE /* LockViewController.swift */,
+			);
+			path = Lock;
 			sourceTree = "<group>";
 		};
 		B6481E381FFCE0420075A1A7 /* Collection */ = {
@@ -500,6 +528,7 @@
 				B68267E81FFE273D009D070F /* HorCollectionController.swift in Sources */,
 				B68267F320034CD1009D070F /* MyCalendarHeader.swift in Sources */,
 				B66F70A720045E1A00557D20 /* CommonSave.swift in Sources */,
+				B62871E0209FE905000C3BEE /* LockViewController.swift in Sources */,
 				B632DC24207B0B9C007B4155 /* UIColor+Extension.swift in Sources */,
 				B6165BF01FFCA2DE0083D4CB /* SmallPoint.swift in Sources */,
 				B68267E61FFE2724009D070F /* WaterFlowViewHorLayout.swift in Sources */,
@@ -519,11 +548,14 @@
 				B68267ED2002405E009D070F /* MyCalendarController.swift in Sources */,
 				B6165BFC1FFCA2EC0083D4CB /* SubController.swift in Sources */,
 				B6165BFD1FFCA2EC0083D4CB /* MainController.swift in Sources */,
+				B62871DD209FE39A000C3BEE /* ReadMe.swift in Sources */,
 				B68267EF2002532B009D070F /* MyCalendarCollectionCell.swift in Sources */,
 				B68267E21FFE1EBE009D070F /* MyVerCollection.swift in Sources */,
 				B6B3E9A3207471B500E2770B /* ViewControllerCell.swift in Sources */,
 				B6165BFB1FFCA2EC0083D4CB /* SideController.swift in Sources */,
 				B6165BF41FFCA2DE0083D4CB /* FontFamily.swift in Sources */,
+				B62871DB209EB262000C3BEE /* ClockViewController.swift in Sources */,
+				B6D9978920A5411D005FB90F /* UIImage+Gif.swift in Sources */,
 				B632DC26207B0BA2007B4155 /* String+Extenstion.swift in Sources */,
 				B6481E3C1FFDCD650075A1A7 /* CollectionFooter.swift in Sources */,
 				B66F70EF200499B700557D20 /* QRCodeController.swift in Sources */,

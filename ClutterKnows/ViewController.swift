@@ -8,14 +8,24 @@
 
 import UIKit
 
+@objcMembers
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var tableView: UITableView!
     let kScreenWidth = UIScreen.main.bounds.width
     let kScreenHeight = UIScreen.main.bounds.height
     
-    let showTexts = ["基本collection","竖向瀑布流","横向瀑布流","日历","二维码","待续","待续"]
-    
+    let source = [
+        (title: "基本collection", controller: NSStringFromClass(CollectionController.self)),
+        (title: "竖向瀑布流", controller: NSStringFromClass(MyCollectionController.self)),
+        (title: "横向瀑布流", controller: NSStringFromClass(HorCollectionController.self)),
+        (title: "日历", controller: NSStringFromClass(MyCalendarController.self)),
+        (title: "二维码", controller: NSStringFromClass(QRCodeController.self)),
+        (title: "待续", controller: NSStringFromClass(ButtonsController.self)),
+        (title: "时钟效果", controller: NSStringFromClass(ClockViewController.self)),
+        (title: "互斥锁-待续", controller: NSStringFromClass(LockViewController.self)),
+        (title: "待续", controller: NSStringFromClass(LockViewController.self))
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.yellow
@@ -36,15 +46,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    @objc func menu() {
+    func menu() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.leftSide.showLeftMenu()
     }
     
-    @objc func pushToController(_ notification: NSNotification) {
+    func pushToController(_ notification: NSNotification) {
         print("sss")
     }
     
@@ -53,7 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return showTexts.count
+        return source.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,26 +70,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if cell == nil {
             cell = ViewControllerCell(style: .default, reuseIdentifier: "ViewControllerCell")
         }
-        cell?.textLabel?.text = showTexts[indexPath.item]
+        cell?.textLabel?.text = source[indexPath.item].title
         return cell!
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if indexPath.row == 0 {
-            show(CollectionController(), sender: nil)
-        } else if indexPath.row == 1 {
-            show(MyCollectionController(), sender: nil)
-        } else if indexPath.row == 2 {
-            show(HorCollectionController(), sender: nil)
-        } else if indexPath.row == 3 {
-            show(MyCalendarController(), sender: nil)
-        } else if indexPath.row == 4 {
-            show(QRCodeController(), sender: nil)
-        } else if indexPath.row == 5 {
-            show(ButtonsController(), sender: nil)
-        } else if indexPath.row == 6 {
-            //ScreenHOT.getScreenImage()
+        let className = source[indexPath.row].controller
+        
+        if let vcType = NSClassFromString(className) {
+            let vc = (vcType as! UIViewController.Type).init()
+            vc.hidesBottomBarWhenPushed = true
+            show(vc, sender: nil)
         }
     }
     

@@ -139,8 +139,76 @@ extension String {
        
      //IP地址验证
      ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
-       
+
      //html标签验证
      ^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$
      */
+    
+    //判断是否是电话号码
+    func isTelNumber(num:NSString)->Bool {
+        let mobile = "^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$"
+        let CM = "^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d)\\d{7}$"
+        let CU = "^1(3[0-2]|5[256]|8[56])\\d{8}$"
+        let CT = "^1((33|53|8[09])[0-9]|349)\\d{7}$"
+        let regextestmobile = NSPredicate(format: "SELF MATCHES %@",mobile)
+        let regextestcm = NSPredicate(format: "SELF MATCHES %@",CM )
+        let regextestcu = NSPredicate(format: "SELF MATCHES %@" ,CU)
+        let regextestct = NSPredicate(format: "SELF MATCHES %@" ,CT)
+        if ((regextestmobile.evaluate(with: num) == true) ||
+            (regextestcm.evaluate(with: num) == true) ||
+            (regextestct.evaluate(with: num) == true) ||
+            (regextestcu.evaluate(with: num) == true)) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    //Validate.email("Dousnail@@153.com").isRight//false
+    //Validate.URL("https://www.baidu.com").isRight//true
+    //Validate.IP("11.11.11.11").isRight//true
+}
+
+enum Validate {
+    case email(String)
+    case phoneNum(String)
+    case carNum(String)
+    case username(String)
+    case password(String)
+    case nickname(String)
+    case URL(String)
+    case IP(String)
+    
+    var isRight: Bool {
+        var predicateStr: String!
+        var currObject: String!
+        switch self {
+        case .email(let str):
+            predicateStr = "^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$"
+            currObject = str
+        case .phoneNum(let str):
+            predicateStr = "^((13[0-9])|(15[^4,\\D]) |(17[0,0-9])|(18[0,0-9]))\\d{8}$"
+            currObject = str
+        case .carNum(let str):
+            predicateStr = "^[A-Za-z]{1}[A-Za-z_0-9]{5}$"
+            currObject = str
+        case .username(let str):
+            predicateStr = "^[A-Za-z0-9]{6,20}+$"
+            currObject = str
+        case .password(let str):
+            predicateStr = "^[a-zA-Z0-9]{6,20}+$"
+            currObject = str
+        case .nickname(let str):
+            predicateStr = "^[\\u4e00-\\u9fa5]{4,8}$"
+            currObject = str
+        case .URL(let str):
+            predicateStr = "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$"
+            currObject = str
+        case .IP(let str):
+            predicateStr = "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+            currObject = str
+        }
+        let predicate = NSPredicate(format: "SELF MATCHES %@" ,predicateStr)
+        return predicate.evaluate(with: currObject)
+    }
 }
